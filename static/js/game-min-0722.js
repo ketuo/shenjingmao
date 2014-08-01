@@ -18054,7 +18054,7 @@ __extends = this.__extends || function(c, e) {
             this.tap_textfeild.width = 400;
             this.tap_textfeild.textColor = 16711680;
             this.tap_textfeild.textAlign = egret.HorizontalAlign.CENTER;
-            this.tap_textfeild.text = "\u963f\u59e8\u8dd1\u6389\u5566\u007e\u007e\u007e"; //文字 你没有抓住神！经！猫！！
+            this.tap_textfeild.text = "阿姨跑掉啦"; //文字 你没有抓住神！经！猫！！
             this.tap_textfeild.size = 22;
             this.tap_textfeild.x = 20;
             this.tap_textfeild.y = 190;
@@ -18063,7 +18063,7 @@ __extends = this.__extends || function(c, e) {
                 400;
             this.rank_textfeild.textColor = 16777215;
             this.rank_textfeild.textAlign = egret.HorizontalAlign.CENTER;
-            this.rank_textfeild.text = "\u7cbe\u795e\u75c5\u9662\u957f\u53c8\u53d1\u795e\u7ecf\u75c5\u4e86\uff01";
+            this.rank_textfeild.text = "\u7cbe\u795e\u75c5\u9662\u957f\u53c8\u53d1\u795e\u7ecf\u75c5\u4e86\uff01";//"精神病院长又发神经病了！"
             this.rank_textfeild.size = 22;
             this.rank_textfeild.strokeColor = 0;
             this.rank_textfeild.stroke = 2;
@@ -18088,7 +18088,7 @@ __extends = this.__extends || function(c, e) {
         }
         __extends(a, c);
         a.prototype.score = function(a) {
-            this.tap_textfeild.text = "\u60a8\u7528" + a + "\u6b65\u90fd\u6ca1\u6709\u6293\u4f4f\u795e\u7ecf\u732b"
+            this.tap_textfeild.text = "\u60a8\u7528" + a + "\u6b65\u90fd\u6ca1\u6709\u6293\u4f4f\u795e\u7ecf\u732b" //您用" + a + "步都没有抓住神经猫
         };
         a.prototype.doShare = function(a) {
             this.dispatchEventWith("shareEvent")
@@ -18207,7 +18207,7 @@ __extends = this.__extends || function(c, e) {
             d = [];
             if (c)
                 for (; c.prenode;) d.push(c.getPos()), c = c.prenode;
-            else console.log("\u5df2\u7ecf\u88ab\u56f0\u968f\u4fbf\u8d70\u4e00\u6b65"),
+            else console.log("\u5df2\u7ecf\u88ab\u56f0\u968f\u4fbf\u8d70\u4e00\u6b65"),//已经被困随便走一步
                 this.dispatchEventWith("weizhu"), d = this.getNear(a);
             return d.reverse()
         };
