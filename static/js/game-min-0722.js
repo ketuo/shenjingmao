@@ -18054,7 +18054,7 @@ __extends = this.__extends || function(c, e) {
             this.tap_textfeild.width = 400;
             this.tap_textfeild.textColor = 16711680;
             this.tap_textfeild.textAlign = egret.HorizontalAlign.CENTER;
-            this.tap_textfeild.text = "\u4f60\u6ca1\u6709\u6293\u4f4f\u795e\uff01\u7ecf\uff01\u732b\uff01\uff01"; //你没有抓住神！经！猫！！
+            this.tap_textfeild.text = "\u4f60\u6ca1\u6709\u6293\u4f4f\u795e\uff01\u7ecf\uff01\u732b\uff01\uff01";
             this.tap_textfeild.size = 22;
             this.tap_textfeild.x = 20;
             this.tap_textfeild.y = 190;
@@ -18063,7 +18063,7 @@ __extends = this.__extends || function(c, e) {
                 400;
             this.rank_textfeild.textColor = 16777215;
             this.rank_textfeild.textAlign = egret.HorizontalAlign.CENTER;
-            this.rank_textfeild.text = "\u7cbe\u795e\u75c5\u9662\u957f\u53c8\u53d1\u795e\u7ecf\u75c5\u4e86\uff01"; //精神病院长又发神经病了！
+            this.rank_textfeild.text = "\u7cbe\u795e\u75c5\u9662\u957f\u53c8\u53d1\u795e\u7ecf\u75c5\u4e86\uff01";
             this.rank_textfeild.size = 22;
             this.rank_textfeild.strokeColor = 0;
             this.rank_textfeild.stroke = 2;
@@ -18088,7 +18088,7 @@ __extends = this.__extends || function(c, e) {
         }
         __extends(a, c);
         a.prototype.score = function(a) {
-            this.tap_textfeild.text = "\u60a8\u7528" + a + "\u6b65\u90fd\u6ca1\u6709\u6293\u4f4f\u795e\u7ecf\u732b" //"您用" + a + "步都没有抓住神经猫
+            this.tap_textfeild.text = "\u60a8\u7528" + a + "\u6b65\u90fd\u6ca1\u6709\u6293\u4f4f\u795e\u7ecf\u732b"
         };
         a.prototype.doShare = function(a) {
             this.dispatchEventWith("shareEvent")
@@ -18207,7 +18207,7 @@ __extends = this.__extends || function(c, e) {
             d = [];
             if (c)
                 for (; c.prenode;) d.push(c.getPos()), c = c.prenode;
-            else console.log("\u5df2\u7ecf\u88ab\u56f0\u968f\u4fbf\u8d70\u4e00\u6b65"), //已经被困随便走一步
+            else console.log("\u5df2\u7ecf\u88ab\u56f0\u968f\u4fbf\u8d70\u4e00\u6b65"),
                 this.dispatchEventWith("weizhu"), d = this.getNear(a);
             return d.reverse()
         };
@@ -18279,7 +18279,7 @@ __extends = this.__extends || function(c, e) {
         }
         __extends(a, c);
         a.prototype.showScore = function(a) {
-            this.txt.text = a + "\n\u518d\u6765\u4e00\u6b21\u5427" //再来一次吧
+            this.txt.text = a + "\n\u518d\u6765\u4e00\u6b21\u5427"
         };
         return a
     }(egret.Sprite);
@@ -18304,7 +18304,7 @@ __extends = this.__extends || function(c, e) {
             this.tap_textfeild.width = 400;
             this.tap_textfeild.textColor = 16711680;
             this.tap_textfeild.textAlign = egret.HorizontalAlign.CENTER;
-            this.tap_textfeild.text = "\u60a8\u752813\u6b65\u6293\u4f4f\u4e86\u795e\u7ecf\u732b"; //您用13步抓住了神经猫
+            this.tap_textfeild.text = "\u60a8\u752813\u6b65\u6293\u4f4f\u4e86\u795e\u7ecf\u732b";
             this.tap_textfeild.size = 22;
             this.tap_textfeild.x = 20;
             this.tap_textfeild.y = 150;
@@ -18313,7 +18313,7 @@ __extends = this.__extends || function(c, e) {
             this.rank_textfeild.textColor = 16777215;
             this.rank_textfeild.textAlign =
                 egret.HorizontalAlign.CENTER;
-            this.rank_textfeild.text = "\u795e\u7ecf\u5168\u56fd\u6392\u540d421\u4f4d"; //神经全国排名421位
+            this.rank_textfeild.text = "\u795e\u7ecf\u5168\u56fd\u6392\u540d421\u4f4d";
             this.rank_textfeild.size = 22;
             this.rank_textfeild.strokeColor = 0;
             this.rank_textfeild.stroke = 2;
