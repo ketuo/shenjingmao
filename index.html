@@ -1,79 +1,209 @@
-<!DOCTYPE html>
-<html>
+﻿<!DOCTYPE html>
+<!-- saved from url=(0076)http://file.seeyouyima.com/game/mao/index.htm?from=timeline&isappinstalled=0 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>科学脱口秀，一起围土豆</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="full-screen" content="true">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="360-fullscreen" content="true">
+    <style>
+        body {
+            text-align: center;
+            background: #000000;
+            padding: 0;
+            border: 0;
+            margin: 0;
+            height: 100%;
+        }
 
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Shenjingmao : 神经猫测试">
+        html {
+            -ms-touch-action: none; /* Direct all pointer events to JavaScript code. */
+        }
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+        .sbgshow {
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            color: #fff;
+            font-size: 30px;
+            line-height: 1.7em;
+            background: rgba(0,0,0,0.85);
+        }
 
-    <title>Shenjingmao</title>
-  </head>
+            .sbgshow .arron {
+                position: absolute;
+                top: 8px;
+                right: 8px;
+                width: 100px;
+                height: 100px;
+                background: url(http://file.seeyouyima.com/game/mao/resource/assets/arron.png) no-repeat;
+                background-size: 100px 100px;
+            }
 
-  <body>
+            .sbgshow p {
+                padding-top: 78px;
+            }
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/ketuo/shenjingmao">View on GitHub</a>
+        .sbg {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            color: #fff;
+            font-size: 26px;
+            line-height: 1.7em;
+            background: rgba(0,0,0,0.85);
+        }
 
-          <h1 id="project_title">Shenjingmao</h1>
-          <h2 id="project_tagline">神经猫测试</h2>
+            .sbg .arron {
+                position: absolute;
+                top: 8px;
+                right: 8px;
+                width: 100px;
+                height: 100px;
+                background: url(http://file.seeyouyima.com/game/mao/resource/assets/arron.png) no-repeat;
+                background-size: 100px 100px;
+            }
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/ketuo/shenjingmao/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/ketuo/shenjingmao/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
+            .sbg p {
+                padding-top: 78px;
+            }
+
+        #download {
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 55px;
+            font-size: 14px;
+            color: white;
+            background: rgba(0,0,0,0.5);
+            overflow: hidden;
+            zoom: 1;
+            z-index: 9999;
+        }
+
+            #download img {
+                display: block;
+                width: 40px;
+                float: left;
+                margin: 7.5px 10px auto 2.5%;
+            }
+
+            #download span {
+                display: block;
+            }
+
+        .download-mess {
+            float: left;
+            font-size: 12px;
+            margin-top: 8px;
+        }
+
+            .download-mess span:first-child {
+                font-size: 16px;
+                font-weight: 600;
+            }
+
+        #download button {
+            -webkit-appearance: none;
+            border: none;
+            background: #da095c;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -o-border-radius: 5px;
+            border-radius: 5px;
+            height: 35px;
+            width: 110px;
+            text-align: center;
+            line-height: 35px;
+            color: white;
+            font-size: 16px;
+            float: right;
+            margin-right: 2.5%;
+            margin-top: 10px;
+        }
+
+        a{
+            -webkit-touch-callout: none;
+            -webkit-appearance: none;
+            display: block;
+            color: #6c6155;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body style="padding: 0px; border: 0px; margin: 0px;">
+    <!---下载---->
+
+
+    <div style="display: inline-block; width: 100%; height: 100%; margin: 0 auto; background: black; position: relative;" id="gameDiv">
+        <canvas id="gameCanvas" width="480" height="800" style="width: 480px; height: 800px; background-color: rgb(0, 0, 0);"></canvas>
     </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
+    <div id="sbg" class="sbg">
+        <div class="arron"></div>
+        <p id="msg">
+            请点击右上角<br>
+            点击【分享到朋友圈】<br>
+            测测好友的节操指数吧！
+        </p>
     </div>
+    <script>        var document_class = "GameApp";</script><!--这部分内容在编译时会被替换，要修改文档类，请到工程目录下的egretProperties.json内编辑。-->
+ <script language="javascript" type="text/javascript" src="static/js/resource_loader.js?ver=255"></script>
+<script src="static/js/egret_loader.js"></script>
+<script src="static/js/game-min-0722.js?223"></script>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Shenjingmao maintained by <a href="https://github.com/ketuo">ketuo</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
+<script>
+    var mebtnopenurl = '';
+    window.shareData = {
+        "imgUrl": "static/images/shenjingcat.png",
+        "timeLineLink": "http://ketuo.github.io/shenjingmao/",
+        "tTitle": "科学脱口秀，节操满地聊科学！！",
+        "tContent": "在9×9范围内的格子中，使用色块围住土豆。"
+    };
 
-    
+    function showme() {
+        window.location.href = "http://www.kexuetuokouxiu.com/";
+    }
+    function dp_share(n, m) {
+        if (m == 0) {
+            document.title = window.shareData.tContent = "科学脱口秀，一起围土豆！"
+        }
+        if (m == 1) {
+            document.title = window.shareData.tContent = "哈～哈～哈～哈～，" + n + "步就围住了土豆，我击败" + (100 - n) + "%的听众呦"
+        }
+        if (m == 2) {
+            document.title = window.shareData.tContent = "土豆跑掉了！！！"
+        }
+        document.getElementById("sbg").className = "sbgshow";
+        window.setTimeout(hiddenMe, 5000);
+    }
 
-  </body>
-</html>
+    function hiddenMe() {
+        document.getElementById("sbg").className = "sbg";
+    }
+
+    egret_h5.startGame();
+    $j(document).ready(function () {
+        if (/Android|Windows Phone|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+            //
+        } else {
+            $j(".aliForPc").show();
+        }
+    });
+</script>
+
+
+</body></html>
