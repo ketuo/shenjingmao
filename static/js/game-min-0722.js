@@ -18355,7 +18355,7 @@ __extends = this.__extends || function(c, e) {
         }
         __extends(a, c);
         a.prototype.score = function(a) {
-            this.tap_textfeild.text = "\u60a8\u7528" + a + "\u6b65\u6293\u4f4f\u4e86\u795e\u7ecf\u732b";
+            this.tap_textfeild.text = "\u60a8\u7528" + a + "\u6b65\u6293\u4f4f\u4e86\u571f\u8c46\u6851";
             this.rank_textfeild.text = "\u795e\u7ecf\u5168\u56fd\u6392\u540d" + Math.floor(100 * a + Math.random() * a * 5) + "\u4f4d";
             this.beat_textfeild.text = "\u51fb\u8d25\u4e86\u7cbe\u795e\u75c5\u9662" + (100 - Math.floor(a * Math.random())) + "%\u7684\u7cbe\u795e\u75c5\u60a3\u8005";
             a = 11 > a ? this.titles_arr[a] : this.titles2_arr[Math.floor(Math.random() * this.titles2_arr.length)];
