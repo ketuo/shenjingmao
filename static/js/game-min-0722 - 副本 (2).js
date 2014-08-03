@@ -18054,16 +18054,16 @@ __extends = this.__extends || function(c, e) {
             this.tap_textfeild.width = 400;
             this.tap_textfeild.textColor = 16711680;
             this.tap_textfeild.textAlign = egret.HorizontalAlign.CENTER;
-            this.tap_textfeild.text = "阿姨又跑掉啦"; //文字 你没有抓住神！经！猫！！
+            this.tap_textfeild.text = "土豆跑掉啦！！！"; 
             this.tap_textfeild.size = 22;
             this.tap_textfeild.x = 20;
             this.tap_textfeild.y = 190;
+			
             this.rank_textfeild = new egret.TextField;
-            this.rank_textfeild.width =
-                400;
+            this.rank_textfeild.width = 400;
             this.rank_textfeild.textColor = 16777215;
             this.rank_textfeild.textAlign = egret.HorizontalAlign.CENTER;
-            this.rank_textfeild.text = "\u7cbe\u795e\u75c5\u9662\u957f\u53c8\u53d1\u795e\u7ecf\u75c5\u4e86\uff01";//"精神病院长又发神经病了！"
+            this.rank_textfeild.text = "\u7cbe\u795e\u75c5\u9662\u957f\u53c8\u53d1\u795e\u7ecf\u75c5\u4e86\uff01";
             this.rank_textfeild.size = 22;
             this.rank_textfeild.strokeColor = 0;
             this.rank_textfeild.stroke = 2;
@@ -18088,7 +18088,7 @@ __extends = this.__extends || function(c, e) {
         }
         __extends(a, c);
         a.prototype.score = function(a) {
-            this.tap_textfeild.text = "\u60a8\u7528" + a + "\u6b65\u90fd\u6ca1\u6709\u6293\u4f4f\u795e\u7ecf\u732b" //您用" + a + "步都没有抓住神经猫
+            this.tap_textfeild.text = "\u60a8\u7528" + a + "\u6b65\u90fd\u6ca1\u6709\u6293\u4f4f\u795e\u7ecf\u732b" 
         };
         a.prototype.doShare = function(a) {
             this.dispatchEventWith("shareEvent")
@@ -18207,7 +18207,7 @@ __extends = this.__extends || function(c, e) {
             d = [];
             if (c)
                 for (; c.prenode;) d.push(c.getPos()), c = c.prenode;
-            else console.log("\u5df2\u7ecf\u88ab\u56f0\u968f\u4fbf\u8d70\u4e00\u6b65"),//已经被困随便走一步
+            else console.log("\u5df2\u7ecf\u88ab\u56f0\u968f\u4fbf\u8d70\u4e00\u6b65"),
                 this.dispatchEventWith("weizhu"), d = this.getNear(a);
             return d.reverse()
         };
@@ -18279,7 +18279,7 @@ __extends = this.__extends || function(c, e) {
         }
         __extends(a, c);
         a.prototype.showScore = function(a) {
-            this.txt.text = a + "\n\u518d\u6765\u4e00\u6b21\u5427"
+            this.txt.text = a + "\n\u518d\u6765\u4e00\u6b21\u5427" 
         };
         return a
     }(egret.Sprite);
@@ -18304,7 +18304,7 @@ __extends = this.__extends || function(c, e) {
             this.tap_textfeild.width = 400;
             this.tap_textfeild.textColor = 16711680;
             this.tap_textfeild.textAlign = egret.HorizontalAlign.CENTER;
-            this.tap_textfeild.text = "\u60a8\u752813\u6b65\u6293\u4f4f\u4e86\u795e\u7ecf\u732b";
+            this.tap_textfeild.text = "\u60a8\u752813\u6b65\u6293\u4f4f\u4e86\u795e\u7ecf\u732b"; 
             this.tap_textfeild.size = 22;
             this.tap_textfeild.x = 20;
             this.tap_textfeild.y = 150;
@@ -18313,7 +18313,7 @@ __extends = this.__extends || function(c, e) {
             this.rank_textfeild.textColor = 16777215;
             this.rank_textfeild.textAlign =
                 egret.HorizontalAlign.CENTER;
-            this.rank_textfeild.text = "\u795e\u7ecf\u5168\u56fd\u6392\u540d421\u4f4d";
+            this.rank_textfeild.text = "\u795e\u7ecf\u5168\u56fd\u6392\u540d421\u4f4d"; 
             this.rank_textfeild.size = 22;
             this.rank_textfeild.strokeColor = 0;
             this.rank_textfeild.stroke = 2;
@@ -18324,7 +18324,7 @@ __extends = this.__extends || function(c, e) {
             this.beat_textfeild.textColor = 16711680;
             this.beat_textfeild.textAlign = egret.HorizontalAlign.CENTER;
             this.beat_textfeild.size = 22;
-            this.beat_textfeild.text = "\u51fb\u8d25\u4e86\u7cbe\u795e\u75c5\u966280%\u7684\u7cbe\u795e\u75c5\u60a3\u8005";
+            this.beat_textfeild.text = "\u51fb\u8d25\u4e86\u7cbe\u795e\u75c5\u966280%\u7684\u7cbe\u795e\u75c5\u60a3\u8005"; 
             this.beat_textfeild.x = 20;
             this.beat_textfeild.y = 230;
             this.title_textfeild = new egret.TextField;
@@ -18332,7 +18332,7 @@ __extends = this.__extends || function(c, e) {
             this.title_textfeild.textColor = 16711680;
             this.title_textfeild.textAlign = egret.HorizontalAlign.CENTER;
             this.title_textfeild.size = 24;
-            this.title_textfeild.text = "\u83b7\u5f97\u79f0\u53f7\uff1a\u601d\u7ef4\u5e7f";
+            this.title_textfeild.text = "\u83b7\u5f97\u79f0\u53f7\uff1a\u601d\u7ef4\u5e7f"; 
             this.title_textfeild.x = 20;
             this.title_textfeild.y = 270;
             this.share_btn = this.createBitmapByName("share_btn");
@@ -18355,9 +18355,9 @@ __extends = this.__extends || function(c, e) {
         }
         __extends(a, c);
         a.prototype.score = function(a) {
-            this.tap_textfeild.text = "\u60a8\u7528" + a + "\u6b65\u6293\u4f4f\u4e86\u795e\u7ecf\u732b";
-            this.rank_textfeild.text = "\u795e\u7ecf\u5168\u56fd\u6392\u540d" + Math.floor(100 * a + Math.random() * a * 5) + "\u4f4d";
-            this.beat_textfeild.text = "\u51fb\u8d25\u4e86\u7cbe\u795e\u75c5\u9662" + (100 - Math.floor(a * Math.random())) + "%\u7684\u7cbe\u795e\u75c5\u60a3\u8005";
+            this.tap_textfeild.text = "\u60a8\u7528" + a + "\u6b65\u6293\u4f4f\u4e86土豆桑！"; 
+            this.rank_textfeild.text = "无下限全国排名" + Math.floor(100 * a + Math.random() * a * 5) + "\u4f4d"; 
+            this.beat_textfeild.text = "您的节操已低于全国" + (100 - Math.floor(a * (1.23 + Math.random())) + "%的科脱听友";
             a = 11 > a ? this.titles_arr[a] : this.titles2_arr[Math.floor(Math.random() * this.titles2_arr.length)];
             this.title_textfeild.text =
                 "\u83b7\u5f97\u79f0\u53f7\uff1a" + a
@@ -18402,7 +18402,7 @@ var __extends = this.__extends || function(c, e) {
         };
         e.prototype.setProgress = function(c, a) {
             this.textField.text =
-                "\u6e38\u620f\u52a0\u8f7d\u4e2d..." + c + "/" + a
+                "节操\u52a0\u8f7d\u4e2d..." + c + "/" + a 
         };
         return e
     }(egret.Sprite),
