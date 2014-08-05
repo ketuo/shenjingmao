@@ -66,7 +66,6 @@ egret_h5.startGame = function () {
     context.deviceContext = new egret.HTML5DeviceContext();
     context.netContext = new egret.HTML5NetContext();
 
-
     //设置屏幕适配策略
     var container = new egret.EqualToFrame();
     var content = egret.Browser.getInstance().isMobile ? new egret.FixedWidth() : new egret.NoScale();
@@ -77,6 +76,17 @@ egret_h5.startGame = function () {
 
     egret.MainContext.instance.rendererContext.texture_scale_factor = 1;
     context.run();
+	
+	var docElm = document.getElementById(egret.StageDelegate.canvas_name);
+	if (docElm.requestFullscreen) {
+		docElm.requestFullscreen();
+	}
+	else if (docElm.mozRequestFullScreen) {
+		docElm.mozRequestFullScreen();
+	}
+	else if (docElm.webkitRequestFullScreen) {
+		docElm.webkitRequestFullScreen();
+	}
 
     var rootClass;
     if(document_class){
