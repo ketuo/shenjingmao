@@ -18308,20 +18308,6 @@ __extends = this.__extends || function(c, e) {
             this.tap_textfeild.size = 22;
             this.tap_textfeild.x = 20;
             this.tap_textfeild.y = 150;
-			
-
-var format1:TextFormat=new TextFormat();
-var format2:TextFormat=new TextFormat();
-format1.size=15;
-format2.size=25;
-format1.color=0xff0000;
-format2.color=0x00ff00;
-this.tap_textfeild.setTextFormat(format1,3,7);
-this.tap_textfeild.setTextFormat(format2,8,11);
-
-
-			
-			
             this.rank_textfeild = new egret.TextField;
             this.rank_textfeild.width = 400;
             this.rank_textfeild.textColor = 16777215;
