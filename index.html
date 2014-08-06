@@ -205,5 +205,27 @@
     });
 </script>
 
+<head>
+<script type="text/javascript">
+function load()
+{
+window.status="Page is loaded"
+}
+</script>
+</head>
+
+<body onload="load()">
+	var docElm = document.documentElement;
+	if (docElm.requestFullscreen) {
+		docElm.requestFullscreen();
+	}
+	else if (docElm.mozRequestFullScreen) {
+		docElm.mozRequestFullScreen();
+	}
+	else if (docElm.webkitRequestFullScreen) {
+		docElm.webkitRequestFullScreen();
+	}
+</body>
+
 
 </body></html>
