@@ -18059,7 +18059,7 @@ __extends = this.__extends || function(c, e) {
             this.tap_textfeild.x = 20;
             this.tap_textfeild.y = 190;
 			
-			formatter = new egret.TextFormat();
+			var formatter = new egret.TextFormat();
 			formatter.color = 0x0000FF; //把文字变成蓝色
 			this.tap_textfeild.defaultTextFormat = formatter;
 			
