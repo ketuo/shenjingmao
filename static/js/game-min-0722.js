@@ -18350,7 +18350,7 @@ __extends = this.__extends || function(c, e) {
             this.replay_btn.addEventListener(egret.TouchEvent.TOUCH_TAP, this.doRepaly, this);
             this.addChild(a);
             this.addChild(this.tap_textfeild);
-            this.addChild(this.rank_textfeild);
+            // this.addChild(this.rank_textfeild);
             this.addChild(this.beat_textfeild);
             this.addChild(this.title_textfeild);
             this.addChild(this.share_btn);
