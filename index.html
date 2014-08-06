@@ -210,11 +210,6 @@
 function load()
 {
 window.status="Page is loaded"
-}
-</script>
-</head>
-
-<body onload="load()">
 	var docElm = document.documentElement;
 	if (docElm.requestFullscreen) {
 		docElm.requestFullscreen();
@@ -225,6 +220,11 @@ window.status="Page is loaded"
 	else if (docElm.webkitRequestFullScreen) {
 		docElm.webkitRequestFullScreen();
 	}
+}
+</script>
+</head>
+
+<body onload="load()">
 </body>
 
 
