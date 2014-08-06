@@ -18308,6 +18308,11 @@ __extends = this.__extends || function(c, e) {
             this.tap_textfeild.size = 22;
             this.tap_textfeild.x = 20;
             this.tap_textfeild.y = 150;
+			
+			var formatter:TextFormat = new TextFormat();
+			formatter.color = 0x0000FF; //把文字变成蓝色
+			this.tap_textfeild.defaultTextFormat = formatter;
+			
             this.rank_textfeild = new egret.TextField;
             this.rank_textfeild.width = 400;
             this.rank_textfeild.textColor = 16777215;
