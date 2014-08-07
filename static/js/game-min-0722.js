@@ -18303,7 +18303,7 @@ __extends = this.__extends || function(c, e) {
             var a = this.createBitmapByName("victory_bg");
             this.tap_textfeild = new egret.TextField;
             
-			this.tap_textfeild.defaultTextFormat = new TextFormat("楷体", 30, 0);   
+			//this.tap_textfeild.defaultTextFormat = new TextFormat("楷体", 30, 0);   
 			//this.tap_textfeild.embedFonts = true;
 			
 			this.tap_textfeild.width = 400;
