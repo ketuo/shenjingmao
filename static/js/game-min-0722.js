@@ -18534,6 +18534,7 @@ var __extends = this.__extends || function(c, e) {
             this.cat.y = a[1] + 10;
             this.addChild(this.cat);
             this.btnStart.parent && this.removeChild(this.btnStart);
+			this.shp.parent && this.removeChild(this.shp);
             this.successPanel.parent && this.removeChild(this.successPanel);
             this.failPanel.parent && this.removeChild(this.failPanel);
             this.morebtn.parent && this.removeChild(this.morebtn);
