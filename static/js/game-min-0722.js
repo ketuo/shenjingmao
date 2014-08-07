@@ -18050,11 +18050,11 @@ __extends = this.__extends || function(c, e) {
         function a() {
             c.call(this);
 			
-		   var shp:egret.Shape = new egret.Shape();
-12         shp.graphics.beginFill( 0xff0000, 1);
-13         shp.graphics.drawRect( 0, 0, 100, 200 );
-14         shp.graphics.endFill();
-15         this.addChild( shp );
+		    this.shp = new egret.Shape;
+            this.shp.graphics.beginFill( 0xff0000, 1);
+            this.shp.graphics.drawRect( 0, 0, 100, 200 );
+            this.shp.graphics.endFill();
+            
 			
 			
             var a = this.createBitmapByName("failed_bg");
@@ -18100,6 +18100,7 @@ __extends = this.__extends || function(c, e) {
             this.replay_btn.y = a.height + 20;
             this.replay_btn.touchEnabled = !0;
             this.replay_btn.addEventListener(egret.TouchEvent.TOUCH_TAP, this.doRepaly, this);
+			this.addChild( this.shp );
             this.addChild(a);
             this.addChild(this.tap_textfeild);
             this.addChild(this.rank_textfeild);
