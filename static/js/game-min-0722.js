@@ -18058,7 +18058,7 @@ __extends = this.__extends || function(c, e) {
             this.tap_textfeild.size = 22;
             this.tap_textfeild.x = 20;
             this.tap_textfeild.y = 190;
-			this.tap_textfeild.fontFamily = "幼圆";
+			this.tap_textfeild.fontFamily = "微软雅黑";
 			this.tap_textfeild.textColor = 0x00ff00;//设置文本颜色
 			this.tap_textfeild.strokeColor = 0xFF0000;//设置描边颜色
 			this.tap_textfeild.stroke = 2;//设置描边的宽度
@@ -18076,6 +18076,11 @@ __extends = this.__extends || function(c, e) {
             this.rank_textfeild.stroke = 2;
             this.rank_textfeild.x = 20;
             this.rank_textfeild.y = 230;
+			this.rank_textfeild.fontFamily = "微软雅黑";
+			this.rank_textfeild.textColor = 0x00ff00;//设置文本颜色
+			this.rank_textfeild.strokeColor = 0xFF0000;//设置描边颜色
+			this.rank_textfeild.stroke = 2;//设置描边的宽度
+			
             this.share_btn = this.createBitmapByName("share_btn");
             this.share_btn.x = 10;
             this.share_btn.y = a.height + 20;
@@ -18309,10 +18314,6 @@ __extends = this.__extends || function(c, e) {
             this.titles3_arr = "避孕大侠 口活达人 东京食屎鬼 节操收集者 裸奔的文艺屌丝 东非考察者 喵星人的铲屎官 会用道具的少年 迷一样的陨石猎人 下一代冷冻者 在肯尼亚被瞎看的动物 地铁守望者 话筒吞噬狂魔 火星上的好奇号 包皮切割者 菊花手术主刀医师 严肃的搞笑诺贝尔 像steed一样直的直男 食粪动物研究者 千年之后一副鸟样的人类 和ent一起去南极的白富美 会胸拧魔方的魔方达人 深井病和蛇精病患者 必须被中国人记住的六种恐龙".split(" ");
             var a = this.createBitmapByName("victory_bg");
             this.tap_textfeild = new egret.TextField;
-            
-			//this.tap_textfeild.defaultTextFormat = new TextFormat("楷体", 30, 0);   
-			//this.tap_textfeild.embedFonts = true;
-			
 			this.tap_textfeild.width = 400;
             this.tap_textfeild.textColor = 16711680;
             this.tap_textfeild.textAlign = egret.HorizontalAlign.CENTER;
@@ -18320,18 +18321,25 @@ __extends = this.__extends || function(c, e) {
             this.tap_textfeild.size = 22;
             this.tap_textfeild.x = 20;
             this.tap_textfeild.y = 150;
+			this.tap_textfeild.fontFamily = "微软雅黑";
+			this.tap_textfeild.textColor = 0x00ff00;//设置文本颜色
+			this.tap_textfeild.strokeColor = 0xFF0000;//设置描边颜色
+			this.tap_textfeild.stroke = 2;//设置描边的宽度
 						
             // this.rank_textfeild = new egret.TextField;
             // this.rank_textfeild.width = 400;
             // this.rank_textfeild.textColor = 16777215;
             // this.rank_textfeild.textAlign =
-                // egret.HorizontalAlign.CENTER;
+            // egret.HorizontalAlign.CENTER;
             // this.rank_textfeild.text = "\u795e\u7ecf\u5168\u56fd\u6392\u540d421\u4f4d";
             // this.rank_textfeild.size = 22;
-            // this.rank_textfeild.strokeColor = 0;
-            // this.rank_textfeild.stroke = 2;
             // this.rank_textfeild.x = 20;
             // this.rank_textfeild.y = 190;
+			// this.rank_textfeild.fontFamily = "微软雅黑";
+			// this.rank_textfeild.textColor = 0x00ff00;//设置文本颜色
+			// this.rank_textfeild.strokeColor = 0xFF0000;//设置描边颜色
+			// this.rank_textfeild.stroke = 2;//设置描边的宽度
+			
             this.beat_textfeild = new egret.TextField;
             this.beat_textfeild.width = 400;
             this.beat_textfeild.textColor = 16711680;
@@ -18341,6 +18349,11 @@ __extends = this.__extends || function(c, e) {
             this.beat_textfeild.x = 20;
             // this.beat_textfeild.y = 230;
 			this.beat_textfeild.y = 190;
+			this.beat_textfeild.fontFamily = "微软雅黑";
+			this.beat_textfeild.textColor = 0x00ff00;//设置文本颜色
+			this.beat_textfeild.strokeColor = 0xFF0000;//设置描边颜色
+			this.beat_textfeild.stroke = 2;//设置描边的宽度
+			
             this.title_textfeild = new egret.TextField;
             this.title_textfeild.width = 400;
             this.title_textfeild.textColor = 16711680;
@@ -18350,6 +18363,12 @@ __extends = this.__extends || function(c, e) {
             this.title_textfeild.x = 20;
             // this.title_textfeild.y = 270;
 			this.title_textfeild.y = 230;
+			this.title_textfeild.fontFamily = "微软雅黑";
+			this.title_textfeild.textColor = 0x00ff00;//设置文本颜色
+			this.title_textfeild.strokeColor = 0xFF0000;//设置描边颜色
+			this.title_textfeild.stroke = 2;//设置描边的宽度
+			
+			
             this.share_btn = this.createBitmapByName("share_btn");
             this.share_btn.x = 10;
             this.share_btn.y = a.height + 20;
@@ -18376,8 +18395,7 @@ __extends = this.__extends || function(c, e) {
             this.beat_textfeild.text = "成功击败" + (99 - Math.floor(a * Math.random())) + "%的科脱听友";
             // a = 11 > a ? this.titles_arr[a] : this.titles2_arr[Math.floor(Math.random() * this.titles2_arr.length)];
             a = this.titles3_arr[Math.floor(Math.random() * this.titles3_arr.length)]
-			this.title_textfeild.text =
-                "\u83b7\u5f97\u79f0\u53f7\uff1a" + a
+			this.title_textfeild.text = "\u83b7\u5f97\u79f0\u53f7\uff1a" + a;
         };
         a.prototype.doShare = function(a) {
             this.dispatchEventWith("shareEvent")
