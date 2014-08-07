@@ -18059,8 +18059,8 @@ __extends = this.__extends || function(c, e) {
             this.tap_textfeild.x = 20;
             this.tap_textfeild.y = 190;
 			this.tap_textfeild.fontFamily = "微软雅黑";
-			this.tap_textfeild.textColor = 0x00ff00;//设置文本颜色
-			this.tap_textfeild.strokeColor = 0xFF0000;//设置描边颜色
+			this.tap_textfeild.textColor = 0xA34415;//设置文本颜色
+			this.tap_textfeild.strokeColor = 0xE3B927;//设置描边颜色
 			this.tap_textfeild.stroke = 2;//设置描边的宽度
 			
 			
@@ -18077,8 +18077,8 @@ __extends = this.__extends || function(c, e) {
             this.rank_textfeild.x = 20;
             this.rank_textfeild.y = 230;
 			this.rank_textfeild.fontFamily = "微软雅黑";
-			this.rank_textfeild.textColor = 0x00ff00;//设置文本颜色
-			this.rank_textfeild.strokeColor = 0xFF0000;//设置描边颜色
+			this.rank_textfeild.textColor = 0xA34415;//设置文本颜色
+			this.rank_textfeild.strokeColor = 0xE3B927;//设置描边颜色
 			this.rank_textfeild.stroke = 2;//设置描边的宽度
 			
             this.share_btn = this.createBitmapByName("share_btn");
@@ -18322,8 +18322,8 @@ __extends = this.__extends || function(c, e) {
             this.tap_textfeild.x = 20;
             this.tap_textfeild.y = 170;
 			this.tap_textfeild.fontFamily = "微软雅黑";
-			this.tap_textfeild.textColor = 0x00ff00;//设置文本颜色
-			this.tap_textfeild.strokeColor = 0xFF0000;//设置描边颜色
+			this.tap_textfeild.textColor = 0xA34415;//设置文本颜色
+			this.tap_textfeild.strokeColor = 0xE3B927;//设置描边颜色
 			this.tap_textfeild.stroke = 2;//设置描边的宽度
 						
             // this.rank_textfeild = new egret.TextField;
@@ -18350,8 +18350,8 @@ __extends = this.__extends || function(c, e) {
             // this.beat_textfeild.y = 230;
 			this.beat_textfeild.y = 210;
 			this.beat_textfeild.fontFamily = "微软雅黑";
-			this.beat_textfeild.textColor = 0x00ff00;//设置文本颜色
-			this.beat_textfeild.strokeColor = 0xFF0000;//设置描边颜色
+			this.beat_textfeild.textColor = 0xA34415;//设置文本颜色
+			this.beat_textfeild.strokeColor = 0xE3B927;//设置描边颜色
 			this.beat_textfeild.stroke = 2;//设置描边的宽度
 			
             this.title_textfeild = new egret.TextField;
@@ -18364,8 +18364,8 @@ __extends = this.__extends || function(c, e) {
             // this.title_textfeild.y = 270;
 			this.title_textfeild.y = 250;
 			this.title_textfeild.fontFamily = "微软雅黑";
-			this.title_textfeild.textColor = 0x00ff00;//设置文本颜色
-			this.title_textfeild.strokeColor = 0xFF0000;//设置描边颜色
+			this.title_textfeild.textColor = 0xA34415;//设置文本颜色
+			this.title_textfeild.strokeColor = 0xE3B927;//设置描边颜色
 			this.title_textfeild.stroke = 2;//设置描边的宽度
 			
 			
