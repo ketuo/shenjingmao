@@ -18052,13 +18052,18 @@ __extends = this.__extends || function(c, e) {
             var a = this.createBitmapByName("failed_bg");
             this.tap_textfeild = new egret.TextField;
             this.tap_textfeild.width = 400;
-            this.tap_textfeild.textColor = 16711680;
+            //this.tap_textfeild.textColor = 16711680;
             this.tap_textfeild.textAlign = egret.HorizontalAlign.CENTER;
             this.tap_textfeild.text = "土豆跑掉啦！！！"; //文字 你没有抓住神！经！猫！！
             this.tap_textfeild.size = 22;
             this.tap_textfeild.x = 20;
             this.tap_textfeild.y = 190;
 			this.tap_textfeild.fontFamily = "幼圆";
+			this.tap_textfeild.textColor = 0x00ff00;//设置文本颜色
+			this.tap_textfeild.strokeColor = 0xFF0000;//设置描边颜色
+			this.tap_textfeild.stroke = 2;//设置描边的宽度
+			
+			
 			
             this.rank_textfeild = new egret.TextField;
             this.rank_textfeild.width =
