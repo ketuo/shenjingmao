@@ -18058,6 +18058,8 @@ __extends = this.__extends || function(c, e) {
             this.tap_textfeild.size = 22;
             this.tap_textfeild.x = 20;
             this.tap_textfeild.y = 190;
+			this.tap_textfeild.fontFamily = "幼圆";
+			
             this.rank_textfeild = new egret.TextField;
             this.rank_textfeild.width =
                 400;
