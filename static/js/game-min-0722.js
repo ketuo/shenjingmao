@@ -18319,6 +18319,12 @@ __extends = this.__extends || function(c, e) {
             this.titles_arr = "\u585e\u5916\u9ad8\u624b \u795e\u7cbe\u75c5\u535a\u58eb \u795e\u7ecf\u5927\u795e \u4f60\u662f\u6211\u7684\u5c0f\u82f9\u679c \u9662\u957f\u6d3e\u6765\u7684\u6551\u5175 \u7cbe\u795e\u75c5\u9662\u957f \u626b\u5730\u50e7 \u4f20\u8bf4\u4e2d\u7684\u9ad8\u624b \u98ce\u9a9a\u7684\u5c11\u5e74 \u767d\u5929\u7761\u89c9\u55b5 \u9694\u58c1\u738b\u4f2f\u4f2f".split(" ");
             this.titles2_arr = "\u795e\u7ecf\u5927\u6761 \u6211\u662f\u5904\u5973\u5ea7\u7684 \u505c\u4e0d\u4e0b\u6765 \u4f60\u662f\u6211\u7684\u5c0f\u82f9\u679c \u55b5\u4e86\u4e2a\u54aa\u7684 M78\u661f\u4eba \u51e4\u59d0\u592b \u7b11\u800c\u4e0d\u8bed".split(" ");
             this.titles3_arr = "避孕大侠 口活达人 东京食屎鬼 节操收集者 裸奔的文艺屌丝 东非考察者 喵星人的铲屎官 会用道具的少年 迷一样的陨石猎人 下一代冷冻者 在肯尼亚被瞎看的动物 地铁守望者 话筒吞噬狂魔 火星上的好奇号 包皮切割者 菊花手术主刀医师 严肃的搞笑诺贝尔 像steed一样直的直男 食粪动物研究者 千年之后一副鸟样的人类 和ent一起去南极的白富美 会胸拧魔方的魔方达人 深井病和蛇精病患者 必须被中国人记住的六种恐龙".split(" ");
+
+			this.shp = new egret.Shape;
+            this.shp.graphics.beginFill( 0x000000, 0.4);
+            this.shp.graphics.drawRect( -500, -500, 1000, 2136 );
+            this.shp.graphics.endFill();
+
             var a = this.createBitmapByName("victory_bg");
             this.tap_textfeild = new egret.TextField;
 			this.tap_textfeild.width = 400;
@@ -18386,6 +18392,7 @@ __extends = this.__extends || function(c, e) {
             this.replay_btn.y = a.height + 20;
             this.replay_btn.touchEnabled = !0;
             this.replay_btn.addEventListener(egret.TouchEvent.TOUCH_TAP, this.doRepaly, this);
+			this.addChild( this.shp );
             this.addChild(a);
             this.addChild(this.tap_textfeild);
             // this.addChild(this.rank_textfeild);
