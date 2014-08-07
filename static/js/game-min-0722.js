@@ -18050,9 +18050,12 @@ __extends = this.__extends || function(c, e) {
         function a() {
             c.call(this);
 			
+			var bH = this.stage.stageHeight;
+            var bW = this.stage.stageWidth;
+			
 		    this.shp = new egret.Shape;
             this.shp.graphics.beginFill( 0x000000, 0.4);
-            this.shp.graphics.drawRect( 0, 0, 100, 200 );
+            this.shp.graphics.drawRect( 0, 0, bW, bH );
             this.shp.graphics.endFill();
 			
             var a = this.createBitmapByName("failed_bg");
