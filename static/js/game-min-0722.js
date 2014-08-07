@@ -18403,7 +18403,7 @@ __extends = this.__extends || function(c, e) {
         }
         __extends(a, c);
         a.prototype.score = function(a) {
-            this.tap_textfeild.text = "赞！你用了" + a + "个湿哒哒就围住了土豆！";
+            this.tap_textfeild.text = "赞！你用" + a + "个湿哒哒就围住了土豆！";
             //this.rank_textfeild.text = "无下限全国排名" + Math.floor(100 * a + Math.random() * a * 5) + "\u4f4d";
             // this.rank_textfeild.text = " ";
             this.beat_textfeild.text = "成功击败" + (99 - Math.floor(a * Math.random())) + "%的科脱听友";
@@ -18487,6 +18487,13 @@ var __extends = this.__extends || function(c, e) {
             this.map.addEventListener("nodeClick", this.onNodeClick, this);
             this.map.addEventListener("weizhu", this.onWeiZhu, this);
             this.cat.addEventListener("catRun", this.onCatRun, this);
+			
+			this.shp = new egret.Shape;
+            this.shp.graphics.beginFill( 0x000000, 0.4);
+            this.shp.graphics.drawRect( -500, -500, 1000, 2136 );
+            this.shp.graphics.endFill();
+			this.addChild(this.shp);
+			
             this.btnStart = this.createBitmapByName("btnStart");
             this.btnStart.x = (this.stageW - this.btnStart.width) / 2;
             this.btnStart.y = (this.stageH - this.btnStart.height) / 2;
