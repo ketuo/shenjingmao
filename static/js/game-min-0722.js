@@ -18302,17 +18302,18 @@ __extends = this.__extends || function(c, e) {
             this.titles3_arr = "避孕大侠 口活达人 东京食屎鬼 节操收集者 裸奔的文艺屌丝 东非考察者 喵星人的铲屎官 会用道具的少年 迷一样的陨石猎人 下一代冷冻者 在肯尼亚被瞎看的动物 地铁守望者 话筒吞噬狂魔 火星上的好奇号 包皮切割者 菊花手术主刀医师 严肃的搞笑诺贝尔 像steed一样直的直男 食粪动物研究者 千年之后一副鸟样的人类 和ent一起去南极的白富美 会胸拧魔方的魔方达人 深井病和蛇精病患者 必须被中国人记住的六种恐龙".split(" ");
             var a = this.createBitmapByName("victory_bg");
             this.tap_textfeild = new egret.TextField;
-            this.tap_textfeild.width = 400;
+            
+			this.tap_textfeild.defaultTextFormat = new TextFormat("楷体", 30, 0);   
+			//this.tap_textfeild.embedFonts = true;
+			
+			this.tap_textfeild.width = 400;
             this.tap_textfeild.textColor = 16711680;
             this.tap_textfeild.textAlign = egret.HorizontalAlign.CENTER;
             this.tap_textfeild.text = "\u60a8\u752813\u6b65\u6293\u4f4f\u4e86\u795e\u7ecf\u732b";
             this.tap_textfeild.size = 22;
             this.tap_textfeild.x = 20;
             this.tap_textfeild.y = 150;
-			
-			this.tap_textfeild.defaultTextFormat = new TextFormat("Freestyle", 30, 0);   
-			this.tap_textfeild.embedFonts = true;
-			
+						
             // this.rank_textfeild = new egret.TextField;
             // this.rank_textfeild.width = 400;
             // this.rank_textfeild.textColor = 16777215;
