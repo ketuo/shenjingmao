@@ -18051,11 +18051,9 @@ __extends = this.__extends || function(c, e) {
             c.call(this);
 			
 		    this.shp = new egret.Shape;
-            this.shp.graphics.beginFill( 0xff0000, 1);
+            this.shp.graphics.beginFill( 0x000000, 0.4);
             this.shp.graphics.drawRect( 0, 0, 100, 200 );
             this.shp.graphics.endFill();
-            
-			
 			
             var a = this.createBitmapByName("failed_bg");
             this.tap_textfeild = new egret.TextField;
