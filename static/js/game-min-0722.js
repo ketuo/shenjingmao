@@ -18049,6 +18049,14 @@ __extends = this.__extends || function(c, e) {
     var e = function(c) {
         function a() {
             c.call(this);
+			
+		   var shp:egret.Shape = new egret.Shape();
+12         shp.graphics.beginFill( 0xff0000, 1);
+13         shp.graphics.drawRect( 0, 0, 100, 200 );
+14         shp.graphics.endFill();
+15         this.addChild( shp );
+			
+			
             var a = this.createBitmapByName("failed_bg");
             this.tap_textfeild = new egret.TextField;
             this.tap_textfeild.width = 400;
